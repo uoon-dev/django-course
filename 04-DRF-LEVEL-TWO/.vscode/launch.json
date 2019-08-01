@@ -35,12 +35,12 @@
       "name": "Python: Django",
       "type": "python",
       "request": "launch",
-      "program": "${workspaceFolder}/job_board/manage.py",
+      "program": "${workspaceFolder}/ebooksapi/manage.py",
       "console": "integratedTerminal",
       "args": [
         "runserver",
         "--noreload",
-        // "--nothreading"
+        "--nothreading"
       ],
       "django": true
     },

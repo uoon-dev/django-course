@@ -20,7 +20,7 @@ class ArticleSerializer(serializers.ModelSerializer):
     now = datetime.now()
     time_delta = timesince(publication_date, now)
     return time_delta
-
+ 
   def validate(self, data):
     """ check that description and title are different """
     if data["title"] == data["description"]:
